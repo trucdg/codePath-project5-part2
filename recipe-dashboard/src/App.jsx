@@ -8,7 +8,8 @@ function App() {
   const dummyRecipe = {
     title: "No recipe found",
     image: "",
-    vegan: false,
+    sourceUrl: "",
+    readyInMinutes: "",
   };
   const [recipesList, setRecipesList] = useState(null);
   useEffect(() => {

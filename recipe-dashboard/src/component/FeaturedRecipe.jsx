@@ -4,7 +4,6 @@ const FeaturedRecipe = ({ recipe }) => {
   console.log(recipe);
   console.log(recipe.title);
   console.log(recipe.image);
-  const recipes = ["name", "image", "diet"];
   return (
     <div className="featured-cont">
       <h2>Featured Recipe</h2>
@@ -22,9 +21,10 @@ const FeaturedRecipe = ({ recipe }) => {
         <li className="card">
           <h4>Diet types</h4>
           <ul>
-            {recipe.diets.map((diet) => (
-              <li>{diet}</li>
-            ))}
+            {recipe.diets &&
+              recipe.diets.map((diet, dietKey) => (
+                <li key={dietKey}>{diet}</li>
+              ))}
           </ul>
         </li>
         <li className="card">
