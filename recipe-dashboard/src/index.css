@@ -2,8 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(35, 29, 29, 0.87);
   background-color: #242424;
+  padding: 0;
 }
 
 a {
@@ -17,15 +18,20 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1490367605959-06955305859b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.5em;
   line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.1em;
 }
 
 button {
@@ -45,4 +51,37 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.row {
+  display: flex;
+}
+
+.left {
+  flex: 20%;
+  background-color: #545ced3f;
+  height: 100vh;
+  padding: 15px 10px;
+  box-shadow: 5px 5px 10px #8888882f;
+}
+
+.right {
+  display: flex;
+  flex: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 2em;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+i {
+  padding-right: 10px;
 }
