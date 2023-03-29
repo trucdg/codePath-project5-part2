@@ -1,5 +1,6 @@
 import React from "react";
-import FeaturedRecipe from "./assets/component/FeaturedRecipe";
+import FeaturedRecipe from "./component/FeaturedRecipe";
+import RecipeTable from "./component/RecipeTable";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       </div>
       <div className="col right">
         <FeaturedRecipe />
+        <div className="break"></div>
+        <RecipeTable />
       </div>
     </div>
   );
