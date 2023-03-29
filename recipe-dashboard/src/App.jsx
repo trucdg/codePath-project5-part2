@@ -46,7 +46,7 @@ function App() {
           recipe={recipesList ? recipesList.results[0] : dummyRecipe}
         />
         {/* <div className="break"></div> */}
-        <RecipeTable />
+        <RecipeTable recipesList={recipesList ? recipesList.results : []} />
       </div>
     </div>
   );

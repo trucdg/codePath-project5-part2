@@ -41,9 +41,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #7728c1a3;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: white;
+  margin: 1em;
 }
 button:hover {
   border-color: #646cff;
@@ -100,13 +102,14 @@ i {
   margin: 2em;
   border-radius: 12px;
   box-shadow: 5px 5px 10px #8888882f;
-  width: 500px;
-  height: 500px;
+  width: 900px;
+  height: auto;
 }
 
 th,
 td {
-  padding: 16px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 table {

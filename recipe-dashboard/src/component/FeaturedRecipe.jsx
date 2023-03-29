@@ -1,9 +1,6 @@
 import React from "react";
 
 const FeaturedRecipe = ({ recipe }) => {
-  console.log(recipe);
-  console.log(recipe.title);
-  console.log(recipe.image);
   return (
     <div className="featured-cont">
       <h2>Featured Recipe</h2>
@@ -16,7 +13,11 @@ const FeaturedRecipe = ({ recipe }) => {
         </li>
         <li className="card">
           <h4>Image</h4>
-          <img src={recipe.image} className="featured-img" />
+          {recipe.image != "" ? (
+            <img src={recipe.image} className="featured-img" />
+          ) : (
+            <p>Oops! No image found</p>
+          )}
         </li>
         <li className="card">
           <h4>Diet types</h4>
