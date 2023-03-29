@@ -75,11 +75,11 @@ button:focus-visible {
 ul {
   list-style-type: none;
   text-align: left;
-  font-size: 2em;
 }
 
-li {
+.nav-item {
   padding-bottom: 1em;
+  font-size: 2em;
 }
 
 i {
@@ -90,8 +90,8 @@ i {
   padding: 2em;
   margin: 2em;
   border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(160, 160, 160, 0.25);
-  background: #545ced3f;
+  box-shadow: 5px 5px 10px #8888882f;
+  background-color: #545ced3f;
   width: 200px;
   color: rgba(35, 29, 29, 0.87);
 }

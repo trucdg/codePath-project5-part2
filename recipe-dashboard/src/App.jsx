@@ -10,19 +10,18 @@ function App() {
           <i className="fa-solid fa-utensils"></i>RecipesBoard
         </h2>
         <ul>
-          <li>
+          <li className="nav-item">
             <i className="fa-solid fa-house"></i>Dashboard
           </li>
-          <li>
+          <li className="nav-item">
             <i className="fa-solid fa-magnifying-glass"></i>Search
           </li>
-          <li>
+          <li className="nav-item">
             <i className="fa-solid fa-circle-info"></i>About
           </li>
         </ul>
       </div>
       <div className="col right">
-        <h1> Featured Recipe </h1>
         <FeaturedRecipe />
       </div>
     </div>

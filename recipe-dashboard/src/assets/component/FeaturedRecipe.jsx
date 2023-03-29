@@ -4,6 +4,7 @@ const FeaturedRecipe = () => {
   const recipe = ["name", "image", "diet"];
   return (
     <div>
+      <h2>Featured Recipe</h2>
       <ul className="d-flex">
         <li className="card">
           <h4>Name</h4>
