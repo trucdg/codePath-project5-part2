@@ -85,3 +85,13 @@ li {
 i {
   padding-right: 10px;
 }
+
+.card {
+  padding: 2em;
+  margin: 2em;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(160, 160, 160, 0.25);
+  background: #545ced3f;
+  width: 200px;
+  color: rgba(35, 29, 29, 0.87);
+}
