@@ -140,3 +140,12 @@ h4 {
 .featured-cont li {
   text-align: center;
 }
+
+label {
+  font-weight: 600;
+  text-align: left;
+}
+
+input {
+  margin: 0.7em;
+}

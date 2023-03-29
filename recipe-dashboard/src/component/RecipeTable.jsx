@@ -3,6 +3,7 @@ import TableRow from "./TableRow";
 const RecipeTable = ({ recipesList }) => {
   const [cookTime, setCookTime] = useState("");
   const [filteredList, setFilteredList] = useState(recipesList);
+  const [vegan, setVegan] = useState("");
 
   const changeCookTime = (event) => {
     setCookTime(event.target.value);
@@ -11,21 +12,26 @@ const RecipeTable = ({ recipesList }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (cookTime !== "") {
+    if (cookTime !== "" && vegan !== "") {
       const filteredData = recipesList.filter((recipe) => {
-        return recipe.readyInMinutes < cookTime;
+        return (
+          recipe.readyInMinutes < cookTime && recipe.vegan.toString() == vegan
+        );
       });
-
       setFilteredList(filteredData);
     } else {
       setFilteredList(recipesList);
     }
   };
 
+  const changeVeganHandler = (event) => {
+    setVegan(event.target.value);
+  };
+
   let body = filteredList.map((recipe) => {
     return [
       recipe.title,
-      recipe.vegetarian ? "true" : "false",
+      recipe.vegan ? "true" : "false",
       recipe.dairyFree ? "true" : "false",
       recipe.readyInMinutes,
       recipe.cuisines,
@@ -38,7 +44,6 @@ const RecipeTable = ({ recipesList }) => {
       <form onSubmit={handleSubmit}>
         <label>
           <label for="time">Cook time (between 10 and 200):</label>
-          <br />
           <input
             type="range"
             id="time"
@@ -49,6 +54,8 @@ const RecipeTable = ({ recipesList }) => {
             onChange={changeCookTime}
           />
           <p>Cooking Time = {cookTime ? cookTime : "(Not specified)"} mins</p>
+          <label>Vegan</label>
+          <input type="text" value={vegan} onChange={changeVeganHandler} />
           <button type="submit"> Submit</button>
         </label>
       </form>
