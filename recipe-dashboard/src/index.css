@@ -55,19 +55,23 @@ button:focus-visible {
 
 .row {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .left {
-  flex: 20%;
   background-color: #545ced3f;
   height: 100vh;
+  width: 300px;
   padding: 15px 10px;
   box-shadow: 5px 5px 10px #8888882f;
+  /* float: left; */
 }
 
 ul {
   list-style-type: none;
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
@@ -77,6 +81,7 @@ ul {
 
 i {
   padding-right: 10px;
+  margin-left: 1.2em;
 }
 
 .card {
@@ -116,4 +121,19 @@ input {
 .break {
   flex-basis: 100%;
   height: 0;
+}
+
+.featured-img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+h4 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.featured-cont li {
+  text-align: center;
 }
