@@ -8,7 +8,9 @@ const FeaturedRecipe = ({ recipe }) => {
         <li className="card">
           <h4>Recipe Name</h4>
           <p>
-            <a href="recipe.sourceUrl">{recipe.title}</a>
+            <a href={recipe.sourceUrl} target="_blank">
+              {recipe.title}
+            </a>
           </p>
         </li>
         <li className="card">

@@ -12,12 +12,19 @@ const RecipeTable = ({ recipesList }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    let filteredData = [];
     if (cookTime !== "" && vegan !== "") {
-      const filteredData = recipesList.filter((recipe) => {
+      filteredData = recipesList.filter((recipe) => {
         return (
           recipe.readyInMinutes < cookTime && recipe.vegan.toString() == vegan
         );
       });
+      setFilteredList(filteredData);
+    } else if (cookTime !== "") {
+      filteredData = recipesList.filter((recipe) => {
+        return recipe.readyInMinutes < cookTime;
+      });
+
       setFilteredList(filteredData);
     } else {
       setFilteredList(recipesList);
