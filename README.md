@@ -4,38 +4,44 @@
 ## Submitted by: **Truc Duong**
 
 ## ⚡️ Inspiration 
-Data can tell interesting stories. In this project, I will create a data dashboard that provides an at-a-glance summary of information gathered from a public API.
-In part one, I choose a public API and construct the dashboard view of the project. The dashboard view contains summary statistics and a list view of the data that can be searched and filtered.
+Data can tell interesting stories. In this project, I will create a data dashboard that provides an at-a-glance summary of information gathered from a public API. I choose the Spooncular API and construct the dashboard view displaying the data for cooking recipes fetched from the API . The dashboard view contains summary statistics and a list view of the data that can be searched and filtered.
 
-Time spent: **_** hours spent in total
+Time spent: **16** hours spent in total
 
 ## 🎯 Goals
 By the end of this assignment I will be able to
-- [ ] Fetch API data with the useEffect React hook and async/await syntax
-- [ ] Respond to events triggered by user interaction and handle user input
-- [ ] Use .map() to dynamically render a group of elements
-- [ ] Use .filter() to filter data based on user input
+- [x] Fetch API data with the useEffect React hook and async/await syntax
+- [x] Respond to events triggered by user interaction and handle user input
+- [x] Use .map() to dynamically render a group of elements
+- [x] Use .filter() to filter data based on user input
 
 ## 👀 Required Features
 
-- [ ] **The list displays a list of data fetched using an API call**
-- [ ] **Data uses the useEffect React hook and async/await syntax**
-- [ ] **The app dashboard includes at least three summary statistics about the data such as**
-  - [ ] enter your stats here
-- [ ] **A search bar allows the user to search for an item in the fetched data**
-- [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [x] **The list displays a list of data fetched using an API call**
+- [x] **Data uses the useEffect React hook and async/await syntax**
+- [x] **The app dashboard includes at least three summary statistics about the data such as**
+  - [x] Name of the Recipe
+  - [x] Is the recipe vegan?
+  - [x] Is the recipe dairy-free
+  - [x] Cooking Time
+  - [x] Cuisine
+- [x] **A search bar allows the user to search for an item in the fetched data**
+- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+  - categories are :
+    - isVegan?
+    - cooking time
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
+- [x] Multiple filters can be applied simultaneously
+- [x] Filters use different input types such as a text input, a selection, or a slider
+- [x] The user can enter specific bounds for filter values
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/trucdg/codePath-project5-part2/blob/main/project5-walkthrough-part2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -48,7 +54,7 @@ GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Async/Await](https://javascript.info/async-await) 
 - [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [weatherBit API](https://www.weatherbit.io/api)
+- [Spoonacular API](https://spoonacular.com/food-api/docs)
 
 ## License
 
