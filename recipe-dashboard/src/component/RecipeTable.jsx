@@ -16,13 +16,13 @@ const RecipeTable = ({ recipesList }) => {
     if (cookTime !== "" && vegan !== "") {
       filteredData = recipesList.filter((recipe) => {
         return (
-          recipe.readyInMinutes < cookTime && recipe.vegan.toString() == vegan
+          recipe.readyInMinutes <= cookTime && recipe.vegan.toString() == vegan
         );
       });
       setFilteredList(filteredData);
     } else if (cookTime !== "") {
       filteredData = recipesList.filter((recipe) => {
-        return recipe.readyInMinutes < cookTime;
+        return recipe.readyInMinutes <= cookTime;
       });
 
       setFilteredList(filteredData);
